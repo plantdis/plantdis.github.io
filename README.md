@@ -1,3 +1,3 @@
 # plantdis
 
-[https://plantdis.github.io/]([url](https://plantdis.github.io/))
+**PlantDis website:** [https://plantdis.github.io/](https://plantdis.github.io/)
