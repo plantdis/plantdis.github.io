@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlantDis – Real‑Time & Scalable Plant Disease Detection</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; line-height:1.6; color:#333; }
+    header { background:#2c7a7b; color:#fff; padding:2rem 1rem; text-align:center; }
+    header h1 { margin:0; font-size:2.5rem; }
+    header p { margin-top:0.5rem; font-size:1.2rem; }
+    nav { background:#1f5a5b; padding:0.5rem; text-align:center; }
+    nav a { color:#fff; margin:0 1rem; text-decoration:none; font-weight:bold; }
+    section { padding:2rem 1rem; max-width:900px; margin:0 auto; }
+    .features { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; }
+    .feature { background:#f7fafc; border:1px solid #e2e8f0; padding:1rem; border-radius:4px; }
+    .feature h3 { margin-top:0; color:#2c5282; }
+    footer { background:#2c7a7b; color:#fff; text-align:center; padding:1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PlantDis</h1>
+    <p>Real‑Time &amp; Scalable Disease Detection for the Future of Agriculture</p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#features">Features</a>
+    <a href="#demo">Demo</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="overview">
+    <h2>Overview</h2>
+    <p><strong>PlantDis</strong> is a cross‑platform application (mobile &amp; desktop) that leverages advanced machine learning (MobileNetV2) and computer vision (Mask R‑CNN) to diagnose plant diseases from leaf images.  It supports 39 conditions across 14 high‑value crops and is tailored for Australian environments—including offline use in rural fields.</p>
+  </section>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature">
+        <h3>Real‑Time Mobile Diagnosis</h3>
+        <p>Snap a photo on your smartphone and get instant disease identification—even without internet access.</p>
+      </div>
+      <div class="feature">
+        <h3>Batch Desktop Analysis</h3>
+        <p>Upload hundreds of leaf images, and receive automated summaries (e.g. disease prevalence, confidence scores).</p>
+      </div>
+      <div class="feature">
+        <h3>High Accuracy Models</h3>
+        <p>Enhanced MobileNetV2 and Mask R‑CNN models, trained on visible, UV &amp; hyperspectral data, detect diseases with >95% accuracy.</p>
+      </div>
+      <div class="feature">
+        <h3>Australian‑Trained</h3>
+        <p>Built with local data (e.g., Septoria blotch in wheat), ensuring robust performance under Australian conditions.</p>
+      </div>
+      <div class="feature">
+        <h3>Offline &amp; FAIR Data</h3>
+        <p>Fully offline capable for remote farms; all datasets and models are published under FAIR principles.</p>
+      </div>
+      <div class="feature">
+        <h3>AI‑Driven Advisory</h3>
+        <p>Context‑aware treatment suggestions powered by an upgraded LLM with local protocols and seasonal insights.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="demo">
+    <h2>Live Demo</h2>
+    <p>Try it now on your device! Download from the <a href="#">App Store</a> or <a href="#">Google Play</a>, or run our <a href="#">desktop demo</a>.</p>
+    <img src="screenshots/example.png" alt="PlantDis app screenshot" style="width:100%;max-width:800px;border:1px solid #e2e8f0;margin-top:1rem;">
+  </section>
+
+  <section id="contact">
+    <h2>Contact &amp; Contributions</h2>
+    <p>Lead Developer: Saswat Panda, APPN‑ANU<br/>
+    Email: <a href="mailto:saswat.panda@anu.edu.au">saswat.panda@anu.edu.au</a><br/>
+    GitHub: <a href="https://github.com/plantdis/plantdis.github.io">github.com/plantdis/plantdis.github.io</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Australian Plant Phenomics Network – ANU node</p>
+  </footer>
+</body>
+</html>
