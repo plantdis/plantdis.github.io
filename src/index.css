@@ -1,0 +1,262 @@
+@import "tailwindcss";
+
+/* Define custom theme colors using @theme directive for Tailwind CSS v4 */
+@theme {
+  --color-primary: #234d43;
+  --color-primary-light: #2e796d;
+  --color-primary-dark: #1a3d35;
+  --color-secondary: #6b7280;
+  --color-secondary-light: #9ca3af;
+  --color-secondary-dark: #4b5563;
+  --color-accent: #ed6d8f;
+  --color-accent-light: #f082ac;
+  --color-accent-dark: #dc3545;
+  --color-success: #10b981;
+  --color-success-light: #34d399;
+  --color-success-dark: #059669;
+  --color-warning: #f59e0b;
+  --color-warning-light: #fbbf24;
+  --color-warning-dark: #d97706;
+  --color-error: #ef4444;
+  --color-error-light: #f87171;
+  --color-error-dark: #dc2626;
+}
+
+/* Global Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Focus styles */
+  *:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+  }
+
+  button:focus,
+  a:focus {
+    outline-offset: 4px;
+  }
+}
+
+/* Custom Component Styles using CSS variables */
+@layer components {
+  .btn-primary {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    transform: scale(1);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-primary-light);
+    transform: scale(1.05);
+  }
+
+  .btn-secondary {
+    border: 2px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    transform: scale(1);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-primary);
+    color: white;
+    transform: scale(1.05);
+  }
+
+  .card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    transition: all 0.3s ease;
+    transform: translateY(0);
+  }
+
+  .card:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    transform: translateY(-0.25rem);
+  }
+
+  .card-dark {
+    background-color: rgb(31 41 55);
+    color: white;
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, var(--color-primary), var(--color-accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .section-padding {
+    padding: 4rem 1rem;
+  }
+
+  .container-custom {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  /* Navigation Styles */
+  .nav-link {
+    color: rgb(55 65 81);
+    transition: color 0.2s ease;
+    font-weight: 500;
+  }
+
+  .nav-link:hover {
+    color: var(--color-primary);
+  }
+
+  .nav-link-active {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  /* Animation Classes */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .slide-up {
+    transform: translateY(1rem);
+    opacity: 0;
+    animation: slideUp 0.8s ease-out forwards;
+  }
+}
+
+/* Custom Animations */
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Typography */
+@layer utilities {
+  .text-responsive-xl {
+    font-size: 1.5rem;
+  }
+
+  .text-responsive-lg {
+    font-size: 1.25rem;
+  }
+
+  .text-responsive-base {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .text-responsive-xl {
+      font-size: 1.875rem;
+    }
+
+    .text-responsive-lg {
+      font-size: 1.5rem;
+    }
+
+    .text-responsive-base {
+      font-size: 1.125rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .text-responsive-xl {
+      font-size: 2.25rem;
+    }
+
+    .text-responsive-lg {
+      font-size: 1.875rem;
+    }
+
+    .text-responsive-base {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .text-responsive-xl {
+      font-size: 3rem;
+    }
+  }
+}
+
+/* Dark Mode Utilities */
+@media (prefers-color-scheme: dark) {
+  .dark-auto {
+    background-color: rgb(17 24 39);
+    color: white;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}
