@@ -12,7 +12,7 @@ const Navigation = () => {
             <div className="flex-shrink-0 flex items-center">
               <div className="w-8 h-8 rounded-lg flex items-center justify-center mr-3" style={{ backgroundColor: 'var(--color-primary)' }}>
                 {/* PlantDis Icon */}
-                <img src="/plantdis.github.io/plantdis_icon.svg" alt="PlantDis" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
+                <img src="/plantdis_icon.svg" alt="PlantDis" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
               </div>
               <span className="text-xl font-bold" style={{ color: 'var(--color-primary)' }}>PlantDis</span>
             </div>
@@ -82,7 +82,7 @@ const HeroSection = () => {
           </div>
           <div className="lg:pl-5 hidden lg:block lg:basis-1/2 relative w-fit ml-auto">
             <div className="relative w-fit bg-no-repeat bg-center bg-contain my-auto overflow-hidden">
-              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -180,7 +180,7 @@ const FeatureSection1 = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
 
             {/* Right side - Text */}
@@ -223,7 +223,7 @@ const FeatureSection2 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -240,7 +240,7 @@ const FeatureSection3 = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
 
             {/* Right side - Text */}
@@ -283,7 +283,7 @@ const FeatureSection4 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -300,7 +300,7 @@ const FeatureSection5 = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
 
             {/* Right side - Text */}
@@ -343,7 +343,7 @@ const FeatureSection6 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -368,7 +368,7 @@ const DemoSection = () => {
           <div className="bg-gray-50 rounded-xl p-8 mb-8">
             <div className="text-gray-500 text-sm mb-4">PlantDis App Interface</div>
             <div className="bg-white rounded-lg p-8 border border-gray-200 flex justify-center">
-              <img src="/plantdis.github.io/output_compressed.gif" alt="PlantDis App Demo" style={{ width: '100%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }} />
+              <img src="/output_compressed.gif" alt="PlantDis App Demo" style={{ width: '100%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }} />
             </div>
           </div>
 
@@ -431,7 +431,7 @@ const Footer = () => {
     <footer className="bg-white py-8 border-t border-gray-200">
       <div className="container-custom text-center">
         <div className="flex items-center justify-center mb-4">
-          <img src="/plantdis.github.io/plantdis_icon.svg" alt="PlantDis" className="w-6 h-6 mr-2" />
+          <img src="/plantdis_icon.svg" alt="PlantDis" className="w-6 h-6 mr-2" />
           <span className="text-xl font-bold" style={{ color: 'var(--color-primary-dark)' }}>PlantDis</span>
         </div>
         <p className="text-lg text-gray-600">
