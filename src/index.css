@@ -2,15 +2,15 @@
 
 /* Define custom theme colors using @theme directive for Tailwind CSS v4 */
 @theme {
-  --color-primary: #234d43;
-  --color-primary-light: #2e796d;
-  --color-primary-dark: #1a3d35;
+  --color-primary: #10b981;
+  --color-primary-light: #34d399;
+  --color-primary-dark: #059669;
   --color-secondary: #6b7280;
   --color-secondary-light: #9ca3af;
   --color-secondary-dark: #4b5563;
-  --color-accent: #ed6d8f;
-  --color-accent-light: #f082ac;
-  --color-accent-dark: #dc3545;
+  --color-accent: #f59e0b;
+  --color-accent-light: #fbbf24;
+  --color-accent-dark: #d97706;
   --color-success: #10b981;
   --color-success-light: #34d399;
   --color-success-dark: #059669;
@@ -20,6 +20,7 @@
   --color-error: #ef4444;
   --color-error-light: #f87171;
   --color-error-dark: #dc2626;
+  --color-background: #f3f4f6;
 }
 
 /* Global Styles */
