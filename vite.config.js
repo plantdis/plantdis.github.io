@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base: '/plantdis.github.io/',
+  base: '/',
 })
