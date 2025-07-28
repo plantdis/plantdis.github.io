@@ -12,7 +12,7 @@ const Navigation = () => {
             <div className="flex-shrink-0 flex items-center">
               <div className="w-8 h-8 rounded-lg flex items-center justify-center mr-3" style={{ backgroundColor: 'var(--color-primary)' }}>
                 {/* PlantDis Icon */}
-                <img src="/plantdis_icon.svg" alt="PlantDis" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
+                <img src="/plantdis.github.io/plantdis_icon.svg" alt="PlantDis" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
               </div>
               <span className="text-xl font-bold" style={{ color: 'var(--color-primary)' }}>PlantDis</span>
             </div>
@@ -56,7 +56,7 @@ const Navigation = () => {
 // --- Hero Section ---
 const HeroSection = () => {
   return (
-    <section className="pt-16 pb-16 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+    <section className="pt-32 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
       <div className="container-custom">
         <div className="flex align-middle items-center">
           <div className="lg:basis-1/2 lg:space-y-14 lg:pr-5 space-y-8">
@@ -82,59 +82,7 @@ const HeroSection = () => {
           </div>
           <div className="lg:pl-5 hidden lg:block lg:basis-1/2 relative w-fit ml-auto">
             <div className="relative w-fit bg-no-repeat bg-center bg-contain my-auto overflow-hidden">
-              <div className="bg-white rounded-2xl shadow-xl p-8 max-w-sm">
-                <div className="text-center mb-4">
-                  <h3 className="font-semibold text-gray-800">PlantDis</h3>
-                  <div className="flex justify-center mt-2">
-                    <div className="w-6 h-6 rounded-full bg-gray-200 flex items-center justify-center">
-                      <img src="/plantdis_icon.svg" alt="PlantDis" className="w-4 h-4" />
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-sm font-medium text-gray-700 mb-2">WHAT WOULD YOU LIKE TO DETECT?</h4>
-                    <div className="grid grid-cols-3 gap-2">
-                      {['Weeds', 'Diseases', 'Pests'].map((item) => (
-                        <div key={item} className="bg-gray-50 rounded-lg p-2 text-center">
-                          <div className="w-8 h-8 bg-green-100 rounded-full mx-auto mb-1 flex items-center justify-center">
-                            <img src="/plantdis_icon.svg" alt={item} className="w-4 h-4" />
-                          </div>
-                          <span className="text-xs text-gray-600">{item}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 className="text-sm font-medium text-gray-700 mb-2">Your Fields</h4>
-                    <div className="space-y-2">
-                      {['Field #1', 'Field #2'].map((field) => (
-                        <div key={field} className="bg-gray-50 rounded-lg p-2">
-                          <div className="flex items-center justify-between">
-                            <span className="text-sm font-medium">{field}</span>
-                            <span className="text-xs text-gray-500">2.5 HA</span>
-                          </div>
-                          <div className="flex items-center mt-1">
-                            <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
-                            <span className="text-xs text-gray-500">NEWTON VILLAGE</span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex justify-around mt-6 pt-4 border-t border-gray-200">
-                  {['Home', 'Map', 'Camera', 'Weather', 'Profile'].map((item) => (
-                    <div key={item} className="text-center">
-                      <div className="w-6 h-6 bg-gray-200 rounded-full mx-auto mb-1"></div>
-                      <span className="text-xs text-gray-500">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -151,7 +99,7 @@ const OverviewSection = () => {
         <div className="bg-white rounded-2xl shadow-lg p-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
-              Ready to go in 2 minutes.
+              Overview
             </h2>
           </div>
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -195,9 +143,9 @@ const FeaturesSection = () => {
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Left side - Title */}
             <div className="lg:basis-1/2 flex items-center">
-              <h1 className="text-4xl lg:text-5xl font-bold leading-tight" style={{ color: 'var(--color-primary-dark)' }}>
+              <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
                 Ready to go in 2 minutes.
-              </h1>
+              </h2>
             </div>
 
             {/* Right side - Features */}
@@ -223,6 +171,187 @@ const FeaturesSection = () => {
   );
 };
 
+// --- New Feature Sections ---
+const FeatureSection1 = () => {
+  return (
+    <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+      <div className="container-custom">
+        <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            {/* Left side - iPhone */}
+            <div className="lg:basis-1/2 flex justify-center">
+              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+            </div>
+
+            {/* Right side - Text */}
+            <div className="lg:basis-1/2">
+              <div className="inline-flex items-center rounded-md px-2 py-1 text-sm font-semibold bg-gray-500 text-white mb-4">
+                Real-Time
+              </div>
+              <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
+                Real‑Time Mobile Diagnosis
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Snap a photo on your smartphone and get instant disease identification—even without internet access.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const FeatureSection2 = () => {
+  return (
+    <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+      <div className="container-custom">
+        <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            {/* Left side - Text */}
+            <div className="lg:basis-1/2">
+              <div className="inline-flex items-center rounded-md px-2 py-1 text-sm font-semibold bg-gray-500 text-white mb-4">
+                Desktop
+              </div>
+              <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
+                Batch Desktop Analysis
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Upload hundreds of leaf images, and receive automated summaries (e.g. disease prevalence, confidence scores).
+              </p>
+            </div>
+
+            {/* Right side - iPhone */}
+            <div className="lg:basis-1/2 flex justify-center">
+              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const FeatureSection3 = () => {
+  return (
+    <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+      <div className="container-custom">
+        <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            {/* Left side - iPhone */}
+            <div className="lg:basis-1/2 flex justify-center">
+              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+            </div>
+
+            {/* Right side - Text */}
+            <div className="lg:basis-1/2">
+              <div className="inline-flex items-center rounded-md px-2 py-1 text-sm font-semibold bg-gray-500 text-white mb-4">
+                Accuracy
+              </div>
+              <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
+                High Accuracy Models
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Enhanced MobileNetV2 and Mask R‑CNN models, trained on visible, UV & hyperspectral data, detect diseases with {'>'}95% accuracy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const FeatureSection4 = () => {
+  return (
+    <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+      <div className="container-custom">
+        <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            {/* Left side - Text */}
+            <div className="lg:basis-1/2">
+              <div className="inline-flex items-center rounded-md px-2 py-1 text-sm font-semibold bg-gray-500 text-white mb-4">
+                Local
+              </div>
+              <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
+                Australian‑Trained
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Built with local data (e.g., Septoria blotch in wheat), ensuring robust performance under Australian conditions.
+              </p>
+            </div>
+
+            {/* Right side - iPhone */}
+            <div className="lg:basis-1/2 flex justify-center">
+              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const FeatureSection5 = () => {
+  return (
+    <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+      <div className="container-custom">
+        <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            {/* Left side - iPhone */}
+            <div className="lg:basis-1/2 flex justify-center">
+              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+            </div>
+
+            {/* Right side - Text */}
+            <div className="lg:basis-1/2">
+              <div className="inline-flex items-center rounded-md px-2 py-1 text-sm font-semibold bg-gray-500 text-white mb-4">
+                Offline
+              </div>
+              <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
+                Offline & FAIR Data
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Fully offline capable for remote farms; all datasets and models are published under FAIR principles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const FeatureSection6 = () => {
+  return (
+    <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+      <div className="container-custom">
+        <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="flex flex-col lg:flex-row gap-8 items-center">
+            {/* Left side - Text */}
+            <div className="lg:basis-1/2">
+              <div className="inline-flex items-center rounded-md px-2 py-1 text-sm font-semibold bg-gray-500 text-white mb-4">
+                AI Advisory
+              </div>
+              <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
+                AI‑Driven Advisory
+              </h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Context‑aware treatment suggestions powered by an upgraded LLM with local protocols and seasonal insights.
+              </p>
+            </div>
+
+            {/* Right side - iPhone */}
+            <div className="lg:basis-1/2 flex justify-center">
+              <img src="/plantdis.github.io/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 // --- Demo Section ---
 const DemoSection = () => {
   return (
@@ -238,9 +367,8 @@ const DemoSection = () => {
 
           <div className="bg-gray-50 rounded-xl p-8 mb-8">
             <div className="text-gray-500 text-sm mb-4">PlantDis App Interface</div>
-            <div className="bg-white rounded-lg p-12 border border-gray-200">
-              <div className="text-6xl mb-4">🌿</div>
-              <div className="text-gray-400">Interactive demo coming soon</div>
+            <div className="bg-white rounded-lg p-8 border border-gray-200 flex justify-center">
+              <img src="/plantdis.github.io/output_compressed.gif" alt="PlantDis App Demo" style={{ width: '100%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }} />
             </div>
           </div>
 
@@ -303,7 +431,7 @@ const Footer = () => {
     <footer className="bg-white py-8 border-t border-gray-200">
       <div className="container-custom text-center">
         <div className="flex items-center justify-center mb-4">
-          <img src="/plantdis_icon.svg" alt="PlantDis" className="w-6 h-6 mr-2" />
+          <img src="/plantdis.github.io/plantdis_icon.svg" alt="PlantDis" className="w-6 h-6 mr-2" />
           <span className="text-xl font-bold" style={{ color: 'var(--color-primary-dark)' }}>PlantDis</span>
         </div>
         <p className="text-lg text-gray-600">
@@ -322,6 +450,12 @@ const App = () => {
       <HeroSection />
       <OverviewSection />
       <FeaturesSection />
+      <FeatureSection1 />
+      <FeatureSection2 />
+      <FeatureSection3 />
+      <FeatureSection4 />
+      <FeatureSection5 />
+      <FeatureSection6 />
       <DemoSection />
       <ContactSection />
       <Footer />
