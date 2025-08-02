@@ -2,31 +2,79 @@
 
 /* Define custom theme colors using @theme directive for Tailwind CSS v4 */
 @theme {
-  --color-primary: #10b981;
-  --color-primary-light: #34d399;
-  --color-primary-dark: #059669;
-  --color-secondary: #6b7280;
-  --color-secondary-light: #9ca3af;
-  --color-secondary-dark: #4b5563;
-  --color-accent: #f59e0b;
-  --color-accent-light: #fbbf24;
-  --color-accent-dark: #d97706;
-  --color-success: #10b981;
-  --color-success-light: #34d399;
-  --color-success-dark: #059669;
-  --color-warning: #f59e0b;
-  --color-warning-light: #fbbf24;
-  --color-warning-dark: #d97706;
-  --color-error: #ef4444;
-  --color-error-light: #f87171;
-  --color-error-dark: #dc2626;
+  /* Primary Colour Palette */
+  --color-primary: #6f901e;
+  /* GREEN - PMS 370 C */
+  --color-primary-light: #a9c47f;
+  /* MID GREEN - 35% PMS 370 C */
+  --color-primary-dark: #333f48;
+  /* DARK GREY - PMS 432 C */
+  --color-secondary: #5b6770;
+  /* MID GREY - 80% PMS 432 C */
+  --color-secondary-light: #a2aaad;
+  /* LIGHT GREY - 40% PMS 432 C */
+  --color-secondary-dark: #333f48;
+  /* DARK GREY - PMS 432 C */
+
+  /* Highlight Colour Palette */
+  --color-accent: #db6116;
+  /* ORANGE - PMS 1585 C */
+  --color-accent-light: #306fbc;
+  /* MID BLUE - PMS 285 C */
+  --color-accent-dark: #9accd3;
+  /* LIGHT BLUE - PMS 3105 C */
+
+  /* Success colors - Green variants */
+  --color-success: #6f901e;
+  /* GREEN - PMS 370 C */
+  --color-success-light: #a9c47f;
+  /* MID GREEN - 35% PMS 370 C */
+  --color-success-dark: #333f48;
+  /* DARK GREY - PMS 432 C */
+
+  /* Warning colors - Orange variants */
+  --color-warning: #db6116;
+  /* ORANGE - PMS 1585 C */
+  --color-warning-light: #306fbc;
+  /* MID BLUE - PMS 285 C */
+  --color-warning-dark: #9accd3;
+  /* LIGHT BLUE - PMS 3105 C */
+
+  /* Error colors - Keep existing red for errors */
+  --color-error: #db6116;
+  /* ORANGE - PMS 1585 C */
+  --color-error-light: #306fbc;
+  /* MID BLUE - PMS 285 C */
+  --color-error-dark: #333f48;
+  /* DARK GREY - PMS 432 C */
+
+  /* Background and additional colors */
   --color-background: #f3f4f6;
+  /* Light grey background */
+  --color-light-green: #d0debb;
+  /* LIGHT GREEN - 30% PMS 370 C */
+  --color-mid-green: #a9c47f;
+  /* MID GREEN - 35% PMS 370 C */
+  --color-dark-grey: #333f48;
+  /* DARK GREY - PMS 432 C */
+  --color-mid-grey: #5b6770;
+  /* MID GREY - 80% PMS 432 C */
+  --color-light-grey: #a2aaad;
+  /* LIGHT GREY - 40% PMS 432 C */
+  --color-mid-blue: #306fbc;
+  /* MID BLUE - PMS 285 C */
+  --color-light-blue: #9accd3;
+  /* LIGHT BLUE - PMS 3105 C */
+  --color-orange: #db6116;
+  /* ORANGE - PMS 1585 C */
 }
 
 /* Global Styles */
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    /* Account for fixed navigation bar */
   }
 
   body {
@@ -119,7 +167,7 @@
   }
 
   .container-custom {
-    max-width: 80rem;
+    max-width: 70rem;
     margin: 0 auto;
   }
 

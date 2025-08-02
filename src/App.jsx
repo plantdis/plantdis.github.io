@@ -10,9 +10,9 @@ const Navigation = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-8 h-8 rounded-lg flex items-center justify-center mr-3" style={{ backgroundColor: 'var(--color-primary)' }}>
+              <div className="w-8 h-8 rounded-lg flex items-center justify-center mr-3">
                 {/* PlantDis Icon */}
-                <img src="/plantdis_icon.svg" alt="PlantDis" className="w-5 h-5" style={{ filter: 'brightness(0) invert(1)' }} />
+                <img src="/plantdis_logo_white.jpeg" alt="PlantDis" className="w-8" />
               </div>
               <span className="text-xl font-bold" style={{ color: 'var(--color-primary)' }}>PlantDis</span>
             </div>
@@ -59,23 +59,20 @@ const HeroSection = () => {
     <section className="pt-32 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
       <div className="container-custom">
         <div className="flex align-middle items-center">
-          <div className="lg:basis-1/2 lg:space-y-14 lg:pr-5 space-y-8">
+          <div className="lg:basis-2/3 lg:space-y-14 lg:pr-5 space-y-8">
             <div className="md:text-left md:items-start flex flex-col items-center text-center">
-              <span className="inline-flex items-center rounded-md px-2 py-1 text-sm md:text-base md:leading-5 font-semibold bg-gray-500 text-white">
-                PlantDis
-              </span>
-              <h1 className="text-3xl lg:text-5xl leading-[34px] lg:leading-[56px] mt-4 text-primary font-bold" style={{ color: 'var(--color-primary-dark)' }}>
-                Better information, better decisions.
+              <h1 className="text-3xl lg:text-5xl leading-[34px] lg:leading-[56px] mt-4 text-primary font-bold" style={{ color: 'var(--color-primary)' }}>
+                The Plant Doctor in Your Pocket
               </h1>
               <h2 className="font-bold text-xl md:text-2xl leading-7 mt-4 text-gray-500">
-                The tool for the farming professional. Record and organise your field observations to make better decisions. Save time by identifying problems in seconds and digitalise your crop walking.
+                Using advanced machine learning, instantly and accurately identify plant diseases and get expert advice with just a single photo.
               </h2>
             </div>
             <div className="mt-4 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-              <button className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded bg-primary-light text-white hover:bg-primary px-4 py-3 font-semibold text-base leading-5 text-center" style={{ backgroundColor: 'var(--color-primary-light)', color: 'white' }}>
+              <button className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded bg-primary text-white hover:bg-primary px-4 py-3 font-semibold text-base leading-5 text-center transition-colors duration-300" style={{ backgroundColor: 'var(--color-mid-green)', color: 'white' }} onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--color-primary)'} onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--color-mid-green)'}>
                 Explore Features
               </button>
-              <button className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded text-primary hover:bg-primary hover:text-white outline outline-1 outline-solid outline-primary px-4 py-3 font-semibold text-base leading-5 text-center" style={{ color: 'var(--color-primary)', border: '1px solid var(--color-primary)' }}>
+              <button className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded text-primary hover:bg-primary hover:text-white outline outline-1 outline-solid outline-primary px-4 py-3 font-semibold text-base leading-5 text-center transition-colors duration-300" style={{ color: 'var(--color-primary)', border: '1px solid var(--color-primary)' }} onMouseEnter={(e) => { e.target.style.backgroundColor = 'var(--color-primary)'; e.target.style.color = 'white'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'var(--color-primary)'; }}>
                 Download App
               </button>
             </div>
@@ -113,56 +110,57 @@ const OverviewSection = () => {
 
 // --- Features Section ---
 const FeaturesSection = () => {
-  const features = [
+  const painPoints = [
     {
-      title: "Identify problems",
-      description: "Let the integrated image recognition identify and document weeds, diseases and pests for you.",
-      icon: "🦗"
+      title: "Unknown Diseases",
+      description: "Your crops are showing symptoms, but you don't know what the disease is?"
     },
     {
-      title: "Field specific weather",
-      description: "Get localised weather to better understand crop development, field conditions and when you should react.",
-      icon: "☁️"
+      title: "Time-Consuming Diagnosis",
+      description: "Are traditional diagnostic methods slow, laborious, and not always accurate?"
     },
     {
-      title: "Build up field records",
-      description: "PlantDis saves a clear field profile for you. This means you have all the important information available at any time and in any place.",
-      icon: "📋"
-    },
-    {
-      title: "Automate crop walking",
-      description: "Do you want to monitor your crops remotely? With the PlantDis, you can be in the field at any time without being in the field.",
-      icon: "📦"
+      title: "Information Overload",
+      description: "Are online searches cluttered with information, making it difficult to find a reliable treatment plan?"
     }
   ];
 
   return (
-    <section id="features" className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+    <section id="features" className="pt-8 pb-8 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
       <div className="container-custom">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* Left side - Title */}
-            <div className="lg:basis-1/2 flex items-center">
-              <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
-                Ready to go in 2 minutes.
-              </h2>
-            </div>
+        <div className="bg-white rounded-2xl shadow-lg p-12 relative overflow-hidden">
+          {/* Main title */}
+          <div className="text-center mb-12">
+            <h1 className="text-4xl lg:text-5xl font-bold p-8 inline-block"
+              style={{ color: 'var(--color-primary)' }}>
+              Are you facing these challenges?
+            </h1>
+          </div>
 
-            {/* Right side - Features */}
-            <div className="lg:basis-1/2">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {features.map((feature, index) => (
-                  <div key={index} className="p-6 rounded-xl border border-gray-100 hover:border-gray-200 transition-all duration-300">
-                    <div className="flex items-center mb-3">
-                      <div className="text-2xl mr-3">{feature.icon}</div>
-                      <h3 className="text-lg font-semibold" style={{ color: 'var(--color-primary-dark)' }}>
-                        {feature.title}
-                      </h3>
-                    </div>
-                    <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
-                  </div>
-                ))}
+          {/* Pain Points Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {painPoints.map((point, index) => (
+              <div key={index} className="text-center">
+                <h3 className="text-xl font-bold mb-4 uppercase tracking-wide"
+                  style={{ color: 'var(--color-orange)' }}>
+                  {point.title}
+                </h3>
+                <p className="text-lg text-black leading-relaxed">
+                  {point.description}
+                </p>
               </div>
+            ))}
+          </div>
+
+          {/* Solution Banner */}
+          <div className="relative -mx-12 -mb-12 mt-8">
+            <div className="rounded-t-none rounded-b-2xl p-8 text-center text-white shadow-lg"
+              style={{ backgroundColor: 'var(--color-primary)' }}>
+              <p className="text-xl italic leading-relaxed">
+                PLANTDIS IS HERE FOR YOU. <br />
+                Designed specifically for farmers, gardeners, and agricultural researchers,<br />
+                Our mission is to provide a fast and reliable tool for plant disease diagnosis.
+              </p>
             </div>
           </div>
         </div>
@@ -394,10 +392,13 @@ const ContactSection = () => {
               Get in Touch
             </h2>
             <div className="mb-6">
-              <div className="w-20 h-20 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" style={{ color: 'var(--color-primary)' }}>
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
+              <div className="w-20 h-20 mx-auto mb-4">
+                <img
+                  src="https://github.com/spsaswat.png"
+                  alt="Saswat Panda"
+                  className="w-full h-full rounded-full object-cover border-2 border-gray-200 hover:border-4 transition-all duration-300"
+                  style={{ borderColor: 'var(--color-primary)' }}
+                />
               </div>
             </div>
 
@@ -407,13 +408,13 @@ const ContactSection = () => {
               </p>
               <p>
                 <strong className="font-semibold" style={{ color: 'var(--color-primary)' }}>Email:</strong>{' '}
-                <a href="mailto:saswat.panda@anu.edu.au" className="hover:underline" style={{ color: 'var(--color-primary)' }}>
+                <a href="mailto:saswat.panda@anu.edu.au" className="hover:underline">
                   saswat.panda@anu.edu.au
                 </a>
               </p>
               <p>
                 <strong className="font-semibold" style={{ color: 'var(--color-primary)' }}>GitHub:</strong>{' '}
-                <a href="https://github.com/plantdis/plantdis.github.io" target="_blank" rel="noopener noreferrer" className="hover:underline" style={{ color: 'var(--color-primary)' }}>
+                <a href="https://github.com/plantdis/plantdis.github.io" target="_blank" rel="noopener noreferrer" className="hover:underline">
                   plantdis.github.io
                 </a>
               </p>
@@ -431,7 +432,7 @@ const Footer = () => {
     <footer className="bg-white py-8 border-t border-gray-200">
       <div className="container-custom text-center">
         <div className="flex items-center justify-center mb-4">
-          <img src="/plantdis_icon.svg" alt="PlantDis" className="w-6 h-6 mr-2" />
+          <img src="/plantdis_logo_white.jpeg" alt="PlantDis" className="w-10 h-10 mr-2" />
           <span className="text-xl font-bold" style={{ color: 'var(--color-primary-dark)' }}>PlantDis</span>
         </div>
         <p className="text-lg text-gray-600">
