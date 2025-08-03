@@ -389,16 +389,16 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "Can I use PlantDis without the Internet?",
-      answer: "Yes! PlantDis is designed to work completely offline. Once you download the app, all AI models run locally on your device, making it perfect for use in remote farms without internet connectivity. However, we recommend using the app with an internet connection when possible to unlock additional features such as cloud sync, latest model updates, and access to our advanced AI advisory system."
+      question: "How should I take photos for the best disease detection results?",
+      answer: "For optimal results, take clear, well-lit photos of affected leaves showing symptoms clearly. Avoid blurry images, extreme close-ups, or photos with heavy shadows. Natural daylight works best, and try to fill the frame with the leaf while showing the disease symptoms. The app works with both individual leaves and plant sections."
+    },
+    {
+      question: "What makes PlantDis different from other plant disease apps?",
+      answer: "PlantDis is specifically trained on Australian agricultural data and uses cutting-edge MobileNetV2 and Mask R-CNN models with visible, UV, and hyperspectral imaging data. Unlike generic plant apps, we focus exclusively on crop diseases with >95% accuracy and provide localized treatment recommendations based on Australian farming conditions and protocols."
     },
     {
       question: "Which crops and diseases does PlantDis detect?",
       answer: "PlantDis can identify 39 different plant conditions across 14 high-value crops including wheat, corn, potato, tomato, apple, grape, and more. The system covers common diseases like blight, rust, powdery mildew, and various fungal infections."
-    },
-    {
-      question: "Is the use of the app free of charge?",
-      answer: "Yes, PlantDis is completely free to use. As an academic research project funded by the Australian Plant Phenomics Network, we provide this tool at no cost to support farmers and researchers worldwide."
     },
     {
       question: "Do I need an account to use the app?",
