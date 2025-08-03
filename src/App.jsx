@@ -22,6 +22,7 @@ const Navigation = () => {
             <a href="#overview" className="nav-link">Overview</a>
             <a href="#features" className="nav-link">Features</a>
             <a href="#demo" className="nav-link">Demo</a>
+            <a href="#faq" className="nav-link">FAQ</a>
             <a href="#contact" className="nav-link">Contact</a>
           </div>
 
@@ -44,6 +45,7 @@ const Navigation = () => {
               <a href="#overview" className="block nav-link py-2">Overview</a>
               <a href="#features" className="block nav-link py-2">Features</a>
               <a href="#demo" className="block nav-link py-2">Demo</a>
+              <a href="#faq" className="block nav-link py-2">FAQ</a>
               <a href="#contact" className="block nav-link py-2">Contact</a>
             </div>
           </div>
@@ -381,6 +383,100 @@ const DemoSection = () => {
   );
 };
 
+// --- FAQ Section ---
+const FAQSection = () => {
+  const [openFAQ, setOpenFAQ] = useState(null);
+
+  const faqs = [
+    {
+      question: "Can I use PlantDis without the Internet?",
+      answer: "Yes! PlantDis is designed to work completely offline. Once you download the app, all AI models run locally on your device, making it perfect for use in remote farms without internet connectivity. However, we recommend using the app with an internet connection when possible to unlock additional features such as cloud sync, latest model updates, and access to our advanced AI advisory system."
+    },
+    {
+      question: "Which crops and diseases does PlantDis detect?",
+      answer: "PlantDis can identify 39 different plant conditions across 14 high-value crops including wheat, corn, potato, tomato, apple, grape, and more. The system covers common diseases like blight, rust, powdery mildew, and various fungal infections."
+    },
+    {
+      question: "Is the use of the app free of charge?",
+      answer: "Yes, PlantDis is completely free to use. As an academic research project funded by the Australian Plant Phenomics Network, we provide this tool at no cost to support farmers and researchers worldwide."
+    },
+    {
+      question: "Do I need an account to use the app?",
+      answer: "No account is required for basic disease detection features. However, creating an optional account allows you to save your diagnosis history, access advanced analytics, and sync data across multiple devices."
+    },
+    {
+      question: "How accurate is the disease detection?",
+      answer: "Our AI models achieve over 95% accuracy in disease detection. The system uses advanced machine learning (MobileNetV2) and computer vision (Mask R-CNN) trained on extensive datasets including visible, UV, and hyperspectral imaging data."
+    },
+    {
+      question: "Can I use PlantDis on multiple devices?",
+      answer: "Yes! PlantDis is available on both mobile (iOS and Android) and desktop platforms. You can install it on multiple devices and optionally sync your data across them with an account."
+    },
+    {
+      question: "What are the exciting new features of this app?",
+      answer: "After users upload images and complete disease detection, if they need more detailed professional advice or have other related questions, we have a dedicated Q&A interface powered by advanced AI models including Gemini. Users can also use filter buttons to choose whether they want to receive plant disease-related responses, ensuring they get the most relevant and targeted assistance for their specific needs."
+    }
+  ];
+
+  const toggleFAQ = (index) => {
+    setOpenFAQ(openFAQ === index ? null : index);
+  };
+
+  return (
+    <section id="faq" className="pt-4 pb-8 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+      <div className="container-custom">
+        <div className="bg-white rounded-2xl shadow-lg p-8">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
+              Frequently Asked Questions
+            </h2>
+            <p className="text-gray-600">
+              Can't find the answer you're looking for?{' '}
+              <a href="#contact" className="hover:underline" style={{ color: 'var(--color-primary)' }}>
+                Contact our support team
+              </a>.
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div key={index} className="border border-gray-200 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleFAQ(index)}
+                  className="w-full text-left p-6 bg-gray-50 hover:bg-gray-100 transition-colors duration-200 flex justify-between items-center"
+                >
+                  <h3 className="text-lg font-semibold pr-4" style={{ color: 'var(--color-primary-dark)' }}>
+                    {faq.question}
+                  </h3>
+                  <svg
+                    className={`w-6 h-6 transform transition-transform duration-200 ${
+                      openFAQ === index ? 'rotate-180' : ''
+                    }`}
+                    style={{ color: 'var(--color-primary)' }}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {openFAQ === index && (
+                  <div className="p-6 bg-white border-t border-gray-200">
+                    <p className="text-gray-700 leading-relaxed">
+                      {faq.answer}
+                    </p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 // --- Contact Section ---
 const ContactSection = () => {
   return (
@@ -458,6 +554,7 @@ const App = () => {
       <FeatureSection5 />
       <FeatureSection6 />
       <DemoSection />
+      <FAQSection />
       <ContactSection />
       <Footer />
     </div>
