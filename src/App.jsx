@@ -71,10 +71,32 @@ const HeroSection = () => {
               </h2>
             </div>
             <div className="mt-4 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
-              <button className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded bg-primary text-white hover:bg-primary px-4 py-3 font-semibold text-base leading-5 text-center transition-colors duration-300" style={{ backgroundColor: 'var(--color-mid-green)', color: 'white' }} onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--color-primary)'} onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--color-mid-green)'}>
+              <button
+                className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded bg-primary text-white hover:bg-primary px-4 py-3 font-semibold text-base leading-5 text-center transition-colors duration-300"
+                style={{ backgroundColor: 'var(--color-mid-green)', color: 'white' }}
+                onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--color-primary)'}
+                onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--color-mid-green)'}
+                onClick={() => {
+                  const element = document.getElementById('feature-section-1');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 Explore Features
               </button>
-              <button className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded text-primary hover:bg-primary hover:text-white outline outline-1 outline-solid outline-primary px-4 py-3 font-semibold text-base leading-5 text-center transition-colors duration-300" style={{ color: 'var(--color-primary)', border: '1px solid var(--color-primary)' }} onMouseEnter={(e) => { e.target.style.backgroundColor = 'var(--color-primary)'; e.target.style.color = 'white'; }} onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'var(--color-primary)'; }}>
+              <button
+                className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded text-primary hover:bg-primary hover:text-white outline outline-1 outline-solid outline-primary px-4 py-3 font-semibold text-base leading-5 text-center transition-colors duration-300"
+                style={{ color: 'var(--color-primary)', border: '1px solid var(--color-primary)' }}
+                onMouseEnter={(e) => { e.target.style.backgroundColor = 'var(--color-primary)'; e.target.style.color = 'white'; }}
+                onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'var(--color-primary)'; }}
+                onClick={() => {
+                  const element = document.getElementById('demo');
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
                 Download App
               </button>
             </div>
@@ -102,7 +124,7 @@ const OverviewSection = () => {
             </h2>
           </div>
           <p className="text-gray-700 text-lg leading-relaxed">
-            <strong className="font-semibold" style={{ color: 'var(--color-primary)' }}>PlantDis</strong> is a cross‑platform application (mobile & desktop) that leverages advanced machine learning (MobileNetV2) and computer vision (Mask R‑CNN) to diagnose plant diseases from leaf images. It supports <strong>39 conditions across 14 high‑value crops</strong> and is tailored for Australian environments—including offline use in rural fields.
+            <strong className="font-semibold" style={{ color: 'var(--color-primary)' }}>PlantDis</strong> is a cross‑platform application (mobile & desktop) that leverages advanced machine learning (MobileNetV2) and computer vision (Mask R‑CNN) to diagnose diseases from leaf images. It supports <strong>39 conditions across 14 high‑value crops</strong> and is tailored for Australian environments—including offline use in rural fields.
           </p>
         </div>
       </div>
@@ -174,7 +196,7 @@ const FeaturesSection = () => {
 // --- New Feature Sections ---
 const FeatureSection1 = () => {
   return (
-    <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+    <section id="feature-section-1" className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
       <div className="container-custom">
         <div className="bg-white rounded-2xl shadow-lg p-8">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
