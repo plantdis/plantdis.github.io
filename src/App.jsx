@@ -178,22 +178,22 @@ const FeatureSection1 = () => {
       <div className="container-custom">
         <div className="bg-white rounded-2xl shadow-lg p-8">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
-            {/* Left side - iPhone */}
-            <div className="lg:basis-1/2 flex justify-center">
-              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
-            </div>
-
-            {/* Right side - Text */}
+            {/* Left side - Text */}
             <div className="lg:basis-1/2">
               <div className="inline-flex items-center rounded-md px-2 py-1 text-sm font-semibold bg-gray-500 text-white mb-4">
-                Real-Time
+                Desktop
               </div>
               <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
-                Real‑Time Mobile Diagnosis
+                Batch Desktop Analysis
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Snap a photo on your smartphone and get instant disease identification—even without internet access.
+                Upload hundreds of leaf images, and receive automated summaries (e.g. disease prevalence, confidence scores).
               </p>
+            </div>
+
+            {/* Right side - iPhone */}
+            <div className="lg:basis-1/2 flex justify-center">
+              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -449,9 +449,8 @@ const FAQSection = () => {
                     {faq.question}
                   </h3>
                   <svg
-                    className={`w-6 h-6 transform transition-transform duration-200 ${
-                      openFAQ === index ? 'rotate-180' : ''
-                    }`}
+                    className={`w-6 h-6 transform transition-transform duration-200 ${openFAQ === index ? 'rotate-180' : ''
+                      }`}
                     style={{ color: 'var(--color-primary)' }}
                     fill="none"
                     stroke="currentColor"
@@ -460,7 +459,7 @@ const FAQSection = () => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                
+
                 {openFAQ === index && (
                   <div className="p-6 bg-white border-t border-gray-200">
                     <p className="text-gray-700 leading-relaxed">
