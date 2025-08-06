@@ -103,7 +103,7 @@ const HeroSection = () => {
           </div>
           <div className="lg:pl-5 hidden lg:block lg:basis-1/2 relative w-fit ml-auto">
             <div className="relative w-fit bg-no-repeat bg-center bg-contain my-auto overflow-hidden">
-              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/hero_background.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -196,14 +196,19 @@ const FeaturesSection = () => {
 // --- New Feature Sections ---
 const FeatureSection1 = () => {
   return (
-    <section id="feature-section-1" className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+    <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
       <div className="container-custom">
         <div className="bg-white rounded-2xl shadow-lg p-8">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
-            {/* Left side - Text */}
+            {/* Left side - iPhone */}
+            <div className="lg:basis-1/2 flex justify-center">
+              <img src="/Section3.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+            </div>
+
+            {/* Right side - Text */}
             <div className="lg:basis-1/2">
               <div className="inline-flex items-center rounded-md px-2 py-1 text-sm font-semibold bg-gray-500 text-white mb-4">
-                Desktop
+                Accuracy
               </div>
               <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
                 Batch Desktop Analysis
@@ -211,11 +216,6 @@ const FeatureSection1 = () => {
               <p className="text-gray-600 text-lg leading-relaxed">
                 Upload hundreds of leaf images, and receive automated summaries (e.g. disease prevalence, confidence scores).
               </p>
-            </div>
-
-            {/* Right side - iPhone */}
-            <div className="lg:basis-1/2 flex justify-center">
-              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -236,16 +236,16 @@ const FeatureSection2 = () => {
                 Desktop
               </div>
               <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
-                Batch Desktop Analysis
+                Real‑Time Mobile Diagnosis
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Upload hundreds of leaf images, and receive automated summaries (e.g. disease prevalence, confidence scores).
+                Snap a photo on your smartphone and get instant disease identification—even without internet access.
               </p>
             </div>
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/Section2.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -262,7 +262,7 @@ const FeatureSection3 = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/Section3.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
 
             {/* Right side - Text */}
@@ -305,7 +305,7 @@ const FeatureSection4 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/Section4.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -322,7 +322,7 @@ const FeatureSection5 = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/Section5.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
 
             {/* Right side - Text */}
@@ -365,7 +365,7 @@ const FeatureSection6 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/iphone13.DBCMK4Rs.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/Section6.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
