@@ -202,7 +202,7 @@ const FeatureSection1 = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/Section1.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section1.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
 
             {/* Right side - Text */}
@@ -245,7 +245,7 @@ const FeatureSection2 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/Section2.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section2.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -262,7 +262,7 @@ const FeatureSection3 = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/Section3.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section3.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
 
             {/* Right side - Text */}
@@ -305,7 +305,7 @@ const FeatureSection4 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/Section4.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section4.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
@@ -322,7 +322,7 @@ const FeatureSection5 = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/Section5.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section5.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
 
             {/* Right side - Text */}
@@ -365,7 +365,7 @@ const FeatureSection6 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/Section6.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section6.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
