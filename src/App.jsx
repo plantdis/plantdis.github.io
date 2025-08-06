@@ -97,7 +97,7 @@ const HeroSection = () => {
                   }
                 }}
               >
-                Download App
+                App Demo
               </button>
             </div>
           </div>
@@ -376,6 +376,9 @@ const FeatureSection6 = () => {
 
 // --- Demo Section ---
 const DemoSection = () => {
+  const handleDownloadClick = (platform) => {
+    alert(`${platform} version launching soon. Stay tuned!`);
+  };
   return (
     <section id="demo" className="pt-4 pb-16 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
       <div className="container-custom">
@@ -395,9 +398,9 @@ const DemoSection = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="btn-primary">Download for iOS</button>
-            <button className="btn-primary">Download for Android</button>
-            <button className="btn-secondary">Try Desktop Version</button>
+            <button className="btn-primary" onClick={() => handleDownloadClick('iOS')}>Download for iOS</button>
+            <button className="btn-primary" onClick={() => handleDownloadClick('Android')}>Download for Android</button>
+            <button className="btn-secondary" onClick={() => handleDownloadClick('Desktop')}>Try Desktop Version</button>
           </div>
         </div>
       </div>
