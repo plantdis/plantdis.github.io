@@ -521,7 +521,7 @@ const ContactSection = () => {
 
             <div className="text-lg text-gray-700 space-y-2">
               <p>
-                <strong className="font-semibold" style={{ color: 'var(--color-primary)' }}>Lead Developer:</strong> Saswat Panda, APPN‑ANU
+                <strong className="font-semibold" style={{ color: 'var(--color-primary)' }}>Project Lead:</strong> Saswat Panda, APPN‑ANU
               </p>
               <p>
                 <strong className="font-semibold" style={{ color: 'var(--color-primary)' }}>Email:</strong>{' '}
@@ -531,8 +531,8 @@ const ContactSection = () => {
               </p>
               <p>
                 <strong className="font-semibold" style={{ color: 'var(--color-primary)' }}>GitHub:</strong>{' '}
-                <a href="https://github.com/plantdis/plantdis.github.io" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                  plantdis.github.io
+                <a href="https://github.com/spsaswat" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  spsaswat
                 </a>
               </p>
             </div>
