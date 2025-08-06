@@ -365,7 +365,7 @@ const FeatureSection6 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/section6.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/Section6.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
