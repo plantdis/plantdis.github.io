@@ -193,7 +193,6 @@ const FeaturesSection = () => {
   );
 };
 
-// --- New Feature Sections ---
 const FeatureSection1 = () => {
   return (
     <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
@@ -211,10 +210,10 @@ const FeatureSection1 = () => {
                 Accuracy
               </div>
               <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
-                Batch Desktop Analysis
+                High Accuracy Models
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Upload hundreds of leaf images, and receive automated summaries (e.g. disease prevalence, confidence scores).
+                Enhanced MobileNetV2 and Mask R‑CNN models, trained on visible, UV & hyperspectral data, detect diseases with {'>'}95% accuracy.
               </p>
             </div>
           </div>
@@ -233,7 +232,7 @@ const FeatureSection2 = () => {
             {/* Left side - Text */}
             <div className="lg:basis-1/2">
               <div className="inline-flex items-center rounded-md px-2 py-1 text-sm font-semibold bg-gray-500 text-white mb-4">
-                Desktop
+                Real-time
               </div>
               <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
                 Real‑Time Mobile Diagnosis
@@ -254,6 +253,7 @@ const FeatureSection2 = () => {
   );
 };
 
+// --- New Feature Sections ---
 const FeatureSection3 = () => {
   return (
     <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
@@ -268,13 +268,13 @@ const FeatureSection3 = () => {
             {/* Right side - Text */}
             <div className="lg:basis-1/2">
               <div className="inline-flex items-center rounded-md px-2 py-1 text-sm font-semibold bg-gray-500 text-white mb-4">
-                Accuracy
+                Desktop
               </div>
               <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--color-primary-dark)' }}>
-                High Accuracy Models
+                Batch Desktop Analysis
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Enhanced MobileNetV2 and Mask R‑CNN models, trained on visible, UV & hyperspectral data, detect diseases with {'>'}95% accuracy.
+                Upload hundreds of leaf images, and receive automated summaries (e.g. disease prevalence, confidence scores).
               </p>
             </div>
           </div>
