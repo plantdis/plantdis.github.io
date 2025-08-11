@@ -61,7 +61,7 @@ const HeroSection = () => {
     <section className="pt-32 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
       <div className="container-custom">
         <div className="flex align-middle items-center">
-          <div className="lg:basis-2/3 lg:space-y-14 lg:pr-5 space-y-8">
+          <div className="basis-1/2 lg:basis-2/3 lg:space-y-14 lg:pr-5 space-y-8">
             <div className="md:text-left md:items-start flex flex-col items-center text-center">
               <h1 className="text-3xl lg:text-5xl leading-[34px] lg:leading-[56px] mt-4 text-primary font-bold" style={{ color: 'var(--color-primary)' }}>
                 The Plant Doctor in Your Pocket
@@ -72,12 +72,9 @@ const HeroSection = () => {
             </div>
             <div className="mt-4 flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
               <button
-                className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded bg-primary text-white hover:bg-primary px-4 py-3 font-semibold text-base leading-5 text-center transition-colors duration-300"
-                style={{ backgroundColor: 'var(--color-mid-green)', color: 'white' }}
-                onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--color-primary)'}
-                onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--color-mid-green)'}
+                className="btn-primary"
                 onClick={() => {
-                  const element = document.getElementById('feature-section-1');
+                  const element = document.getElementById('features');
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' });
                   }
@@ -86,10 +83,10 @@ const HeroSection = () => {
                 Explore Features
               </button>
               <button
-                className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded text-primary hover:bg-primary hover:text-white outline outline-1 outline-solid outline-primary px-4 py-3 font-semibold text-base leading-5 text-center transition-colors duration-300"
+                className="focus:outline-none focus:ring-4 focus:ring-light flex justify-center rounded text-primary hover:bg-primary hover:text-white outline-1 outline-solid outline-primary px-4 py-3 font-semibold text-base leading-5 text-center transition-colors duration-300"
                 style={{ color: 'var(--color-primary)', border: '1px solid var(--color-primary)' }}
                 onMouseEnter={(e) => { e.target.style.backgroundColor = 'var(--color-primary)'; e.target.style.color = 'white'; }}
-                onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'var(--color-primary)'; }}
+                onMouseLeave={(e) => { e.target.style.backgroundColor = 'transparent'; e.target.style.color = 'var(--color-primary)' }}
                 onClick={() => {
                   const element = document.getElementById('demo');
                   if (element) {
@@ -101,9 +98,9 @@ const HeroSection = () => {
               </button>
             </div>
           </div>
-          <div className="lg:pl-5 hidden lg:block lg:basis-1/2 relative w-fit ml-auto">
+          <div className="basis-1/2 lg:pl-5 lg:basis-1/2 relative w-fit ml-auto">
             <div className="relative w-fit bg-no-repeat bg-center bg-contain my-auto overflow-hidden">
-              <img src="/hero_background.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/hero_background.png" alt="iPhone 13" style={{ width: '100%', maxWidth: '40rem', height: 'auto', display: 'block' }} />
             </div>
           </div>
         </div>
@@ -195,13 +192,13 @@ const FeaturesSection = () => {
 
 const FeatureSection1 = () => {
   return (
-    <section className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
+    <section id="feature-section-1" className="pt-4 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
       <div className="container-custom">
         <div className="bg-white rounded-2xl shadow-lg p-8">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/section1.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section1.png" alt="iPhone 13" style={{ width: '100%', maxWidth: '40rem', height: 'auto', display: 'block' }} />
             </div>
 
             {/* Right side - Text */}
@@ -244,7 +241,7 @@ const FeatureSection2 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/section2.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section2.png" alt="iPhone 13" style={{ width: '100%', maxWidth: '40rem', height: 'auto', display: 'block' }} />
             </div>
           </div>
         </div>
@@ -262,7 +259,7 @@ const FeatureSection3 = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/section3.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section3.png" alt="iPhone 13" style={{ width: '100%', maxWidth: '40rem', height: 'auto', display: 'block' }} />
             </div>
 
             {/* Right side - Text */}
@@ -305,7 +302,7 @@ const FeatureSection4 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/section4.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section4.png" alt="iPhone 13" style={{ width: '100%', maxWidth: '40rem', height: 'auto', display: 'block' }} />
             </div>
           </div>
         </div>
@@ -322,7 +319,7 @@ const FeatureSection5 = () => {
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             {/* Left side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/section5.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section5.png" alt="iPhone 13" style={{ width: '100%', maxWidth: '40rem', height: 'auto', display: 'block' }} />
             </div>
 
             {/* Right side - Text */}
@@ -365,7 +362,7 @@ const FeatureSection6 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/section6.png" alt="iPhone 13" style={{ width: '40rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section6.png" alt="iPhone 13" style={{ width: '100%', maxWidth: '40rem', height: 'auto', display: 'block' }} />
             </div>
           </div>
         </div>
