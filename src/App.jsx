@@ -60,8 +60,8 @@ const HeroSection = () => {
   return (
     <section className="pt-32 pb-4 px-4" style={{ backgroundColor: 'var(--color-background)' }}>
       <div className="container-custom">
-        <div className="flex align-middle items-center">
-          <div className="basis-1/2 lg:basis-2/3 lg:space-y-14 lg:pr-5 space-y-8">
+        <div className="flex flex-col lg:flex-row align-middle items-center">
+          <div className="order-2 lg:order-1 basis-full lg:basis-2/3 lg:space-y-14 lg:pr-5 space-y-8">
             <div className="md:text-left md:items-start flex flex-col items-center text-center">
               <h1 className="text-3xl lg:text-5xl leading-[34px] lg:leading-[56px] mt-4 text-primary font-bold" style={{ color: 'var(--color-primary)' }}>
                 The Plant Doctor in Your Pocket
@@ -98,7 +98,7 @@ const HeroSection = () => {
               </button>
             </div>
           </div>
-          <div className="basis-1/2 lg:pl-5 lg:basis-1/2 relative w-fit ml-auto">
+          <div className="order-1 lg:order-2 basis-full lg:pl-5 lg:basis-1/2 relative w-fit lg:ml-auto mb-8 lg:mb-0">
             <div className="relative w-fit bg-no-repeat bg-center bg-contain my-auto overflow-hidden">
               <img src="/hero_background.png" alt="iPhone 13" style={{ width: '100%', maxWidth: '40rem', height: 'auto', display: 'block' }} />
             </div>
