@@ -390,7 +390,7 @@ const DemoSection = () => {
           <div className="bg-gray-50 rounded-xl p-8 mb-8">
             <div className="text-gray-500 text-sm mb-4">PlantDis App Interface</div>
             <div className="bg-white rounded-lg p-8 border border-gray-200 flex justify-center">
-              <img src="/output_compressed.gif" alt="PlantDis App Demo" style={{ width: '100%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }} />
+              <img src="/plantdis_demo.gif" alt="PlantDis App Demo" style={{ width: '100%', maxWidth: '300px', height: 'auto', borderRadius: '8px' }} />
             </div>
           </div>
 
