@@ -241,7 +241,7 @@ const FeatureSection2 = () => {
 
             {/* Right side - iPhone */}
             <div className="lg:basis-1/2 flex justify-center">
-              <img src="/section2.gif" alt="iPhone 13" style={{ width: '20rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
+              <img src="/section2.gif" alt="iPhone 13" style={{ width: '15rem', height: 'auto', display: 'block', maxWidth: 'none' }} />
             </div>
           </div>
         </div>
