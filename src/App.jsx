@@ -271,7 +271,7 @@ const FeatureSection3 = () => {
                 Batch Desktop Analysis
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
-                Upload hundreds of leaf images, and receive automated summaries (e.g. disease prevalence, confidence scores).
+                Upload hundreds of palnt/leaf images, and receive automated summaries (e.g. disease prevalence, confidence scores).
               </p>
             </div>
           </div>
